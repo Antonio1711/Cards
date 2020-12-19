@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <script src="./scripts/fatorial.js"></script>
+    <script src="./scripts/imc.js"></script>
+    <script src="./scripts/triangulo.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h2>Fatorial</h2>
+        <form>
+            <input type="number" id="fatorial" placeholder="Insira um número">
+        </form>
+        <div>
+            <button onclick="calcular(event)">Executar</button>
+        </div>
+        Resultado: <span id="res_fatorial"></span>
+    </div>
+    <div class="card">
+        <h2>IMC</h2>
+        <form>
+            <input type="number" id="peso" placeholder="Digite seu peso">
+            <input type="number" id="altura" placeholder="Digite sua altura">
+        </form>
+        <div>
+            <button onclick="imc_op(event)">Executar</button>
+        </div>
+        Resultado: <span id="res_imc"></span>
+    </div>
+    <div class="card">
+        <h2>Tipo de Triângulo</h2>
+        <form>
+            <input type="number" id="triangulo1" placeholder="Digite a 1ª medida">
+            <input type="number" id="triangulo2" placeholder="Digite a 2ª medida">
+            <input type="number" id="triangulo3" placeholder="Digite a 3ª medida">
+        </form>
+        <div>
+            <button onclick="triangulo(event)">Executar</button>
+        </div>
+        Resultado: <span id="res_triangulo"></span>
+    </div>
+</body>
+</html>
